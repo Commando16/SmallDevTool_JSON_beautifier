@@ -1,0 +1,43 @@
+:root {
+    --primary_color: turquoise;
+    --corner_radius: 10px;
+}
+
+body{
+    background-image: url("./assets/background_2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#base-container{
+    height: 100vh;
+}
+
+#top-header{
+    color: var(--primary_color);
+}
+
+#text-to-convert-input{
+    height: 250px;
+    border-radius: var(--corner_radius);
+}
+
+#convert-button{
+    height: 40px;
+    width: 150px;
+    border: 0px;
+    border-radius: var(--corner_radius);
+    background-color: var(--primary_color);
+    color: white;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+#text-to-convert-output-parent-box{
+    min-height: 250px;
+    max-height: auto;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: white;
+}
