@@ -18,9 +18,16 @@ body{
     color: var(--primary_color);
 }
 
-#text-to-convert-input{
-    height: 100%;
+#text-to-convert-input-parent-box{
+    background-color: white;
     border-radius: var(--corner_radius);
+}
+
+#text-to-convert-input{
+    background-color: transparent;
+    height: 100%;
+    border: none;
+    outline: none;
 }
 
 #convert-button{
@@ -35,8 +42,31 @@ body{
 }
 
 #text-to-convert-output-parent-box{
-    height: 100%;
-    border: 1px solid black;
+    border: 1px solid transparent;
     border-radius: 10px;
     background-color: white;
+    overflow: auto;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+    border-radius: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 5px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
 }
